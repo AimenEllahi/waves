@@ -7,6 +7,15 @@
 
     <link rel="stylesheet" href="./style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("r477shctvSpuHLh8_");
+      })();
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
@@ -43,7 +52,7 @@
             Do you want to release your music on Intertone Records? Fill out the
             form and send us an unreleased demo.
           </p>
-          <form>
+          <form id="musicSubmissionForm">
             <div class="form-group">
               <input type="email" id="email" name="email" required />
               <label for="email">Email Address</label>
