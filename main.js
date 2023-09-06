@@ -186,3 +186,33 @@ const TAU = Math.PI * 2;
 function lerp(a, b, t) {
   return (1 - t) * a + t * b;
 }
+
+// Function to send the email
+function sendMail(event) {
+  event.preventDefault(); // Prevent the default form submission behavior
+
+  // Get the form element
+  const form = document.getElementById("musicSubmissionForm");
+
+  // Send the email using EmailJS
+  emailjs.sendForm("service_o228z4m", "template_0p7yrhp", form).then(
+    function (response) {
+      console.log("Email sent successfully:", response);
+      // You can add a success message or redirect to a thank you page here
+      alert("Thank you! Your music submission has been sent successfully.");
+    },
+    function (error) {
+      console.error("Email send failed:", error);
+      // Handle the error, e.g., display an error message to the user
+      alert("Oops! Something went wrong. Please try again later.");
+    }
+  );
+
+  // Clear the form fields after submission if needed
+  form.reset();
+}
+
+// Attach the sendMail function to the form's submit event
+document
+  .getElementById("musicSubmissionForm")
+  .addEventListener("submit", sendMail);
