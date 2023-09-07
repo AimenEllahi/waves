@@ -104,8 +104,8 @@ function resize() {
 
   buffer.drawImage(ctx.canvas, 0, 0);
 
-  ctx.canvas.width = width * (isMobile ? 1 : 1.5);
-  ctx.canvas.height = height * (isMobile ? 1 : 1.5);
+  ctx.canvas.width = width;
+  ctx.canvas.height = height;
 
   ctx.drawImage(buffer.canvas, 0, 0);
 

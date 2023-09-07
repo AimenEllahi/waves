@@ -28,7 +28,7 @@ gsap.to(".red", {
     trigger: ".red",
     toggleActions: "restart pause reverse pause",
   },
-  duration: 2,
+
   backgroundColor: "#FFA500",
   ease: "none",
 });
