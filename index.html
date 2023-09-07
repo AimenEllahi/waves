@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
 
     <link rel="stylesheet" href="./style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-    ></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
       (function () {
         emailjs.init("r477shctvSpuHLh8_");
@@ -28,8 +26,12 @@
             <div class="logo">
               <img class="logoImage" src="/logo1.png" alt="logo" />
             </div>
-            <div class="logoRight">
-              <span>Submit Music</span>
+            <div class="logoRight" href="#formSection">
+
+              <span class='top-button'>
+                SUBMIT MUSIC
+              </span>
+
             </div>
           </div>
           <div class="overlayContent">
@@ -40,11 +42,7 @@
       </section>
 
       <section class="panel" id="formSection">
-        <div class="logoContainer">
-          <div class="logo">
-            <img class="logoImage" src="/logo1.png" alt="logo" />
-          </div>
-        </div>
+
         <div class="form-container">
           <h2>Submit Music</h2>
           <p>
@@ -57,42 +55,35 @@
               <label for="email">Email Address</label>
             </div>
             <div class="form-group">
-              <input
-                type="text"
-                id="private-demo"
-                name="private-demo"
-                required
-              />
+              <input type="text" id="private-demo" name="private-demo" required />
               <label for="private-demo">Private Demo Link</label>
             </div>
             <div class="form-group">
-              <input
-                type="text"
-                id="spotify-link"
-                name="spotify-link"
-                required
-              />
+              <input type="text" id="spotify-link" name="spotify-link" required />
               <label for="spotify-link">Spotify Profile Link</label>
             </div>
             <div class="form-group">
-              <input
-                type="text"
-                id="instagram-link"
-                name="instagram-link"
-                required
-              />
+              <input type="text" id="instagram-link" name="instagram-link" required />
               <label for="instagram-link">Instagram Link</label>
             </div>
             <div class="form-group">
-              <input type="text" id="message" name="message" />
+              <textarea rows="3" id="message" name="message"></textarea>
               <label for="instagram-link">Message (optional)</label>
             </div>
-            <button type="submit">Submit</button>
+            <button type="submit">SUBMIT</button>
           </form>
+          <div class="footer">
+            <span>info@intertone.io</span>
+            <a>
+              <img src="/insta.svg" alt="logo" />
+            </a>
+          </div>
         </div>
       </section>
     </div>
 
     <script type="module" src="./main.js"></script>
+    <script type="module" src="./bg-effect.js"></script>
   </body>
+
 </html>
