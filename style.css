@@ -59,6 +59,12 @@ body {
   font-size: 32px;
 }
 
+.scene-1 {
+  padding: 1.5rem;
+  position: relative;
+
+}
+
 #animation {
   background-color: black;
   overflow: hidden;
@@ -68,42 +74,35 @@ body {
 .overlay {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+  top: 35px;
+  left: 30px;
+  width: 100vw;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
   z-index: 1;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: start;
+  align-items: start;
 }
 
-.overlay h1 {
-  color: white;
-  font-size: 64px;
-  text-align: center;
-  z-index: 2;
-  font-family: "Magtis", sans-serif;
-}
 
 .overlay p {
   color: white;
-  font-size: 22px;
-  text-align: center;
+  font-size: 2.5rem;
+  width: 50%;
+  text-align: left;
   z-index: 2;
+  margin-top: 19%;
   font-family: "Roboto-Bold", sans-serif;
 }
 
 .logoContainer {
   position: absolute;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 97vw;
+  left: 0;
+  width: 95%;
   height: 30px;
   z-index: 3;
-  padding: 1.2rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -117,6 +116,7 @@ body {
 .logoRight {
   color: white;
   font-size: 1.5rem;
+  margin-left: auto;
   cursor: pointer;
   font-family: "Magtis", sans-serif;
   text-decoration: none !important;
@@ -126,6 +126,43 @@ body {
 
 .logoRight:hover {
   color: #8ec1ff;
+}
+
+.navlinks {
+  position: absolute;
+  bottom: 105px;
+}
+
+.navlinks>span {
+  color: white;
+  font-size: .85rem;
+  margin-left: auto;
+  cursor: pointer;
+  text-decoration: none !important;
+  transition: 300ms ease-in-out;
+  margin-right: 1rem;
+}
+
+.navlink-icons {
+  display: flex;
+}
+
+.navlink-icons>a {
+  width: 1.5rem;
+  object-fit: contain;
+  margin: .5rem 0;
+  cursor: pointer;
+  color: #fff;
+  transition: 300ms ease-in-out;
+}
+
+.navlink-icons>a:hover {
+  transform: scale(1.1);
+  color: #8ec1ff
+}
+
+.spotify {
+  margin-left: .5rem;
 }
 
 #formSection {
@@ -143,7 +180,7 @@ body {
 }
 
 h2 {
-  margin-top: 3%;
+  margin-top: 5%;
   font-size: 34px;
   line-height: 1.5rem
 }

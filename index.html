@@ -6,6 +6,9 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
 
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
@@ -19,7 +22,7 @@
 
   <body>
     <div class="container">
-      <section class="panel" id="animation">
+      <section class="panel scene-1" id="animation">
         <canvas id="animationCanvas"></canvas>
         <div class="overlay">
           <div class="logoContainer">
@@ -35,10 +38,23 @@
             </div>
           </div>
           <div class="overlayContent">
-            <h1>Intertone</h1>
-            <p>Forward thinking record label and music company.</p>
+            <p>Intertone Records is a forward thinking music company and record label operating globally.</p>
+            <div class='navlinks'>
+              <span>info@intertone.io</span>
+              <div class='navlink-icons'>
+
+                <a href='https://www.instagram.com/intertonerecords/'>
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a class='spotify'
+                  href="https://open.spotify.com/user/313da3ws4f22eg7af5swfjr6wimu?si=89e9ca2a225545a8">
+                  <i class="fa-brands fa-spotify "></i>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
+
       </section>
 
       <section class="panel" id="formSection">
@@ -72,12 +88,7 @@
             </div>
             <button type="submit">SUBMIT</button>
           </form>
-          <div class="footer">
-            <span>info@intertone.io</span>
-            <a>
-              <img src="/insta.svg" alt="logo" />
-            </a>
-          </div>
+
         </div>
       </section>
     </div>
