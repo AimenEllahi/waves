@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
@@ -27,7 +26,7 @@
         <div class="overlay">
           <div class="logoContainer">
             <div class="logo">
-              <img class="logoImage" src="/logo1.png" alt="logo">
+              <img class="logoImage" src="/logo1.png" alt="logo" />
             </div>
             <div class="logoRight">
               <span>Submit Music</span>
@@ -43,7 +42,7 @@
       <section class="panel" id="formSection">
         <div class="logoContainer">
           <div class="logo">
-            <img class="logoImage" src="/logo1.png" alt="logo">
+            <img class="logoImage" src="/logo1.png" alt="logo" />
           </div>
         </div>
         <div class="form-container">
@@ -58,16 +57,35 @@
               <label for="email">Email Address</label>
             </div>
             <div class="form-group">
-              <input type="text" id="private-demo" name="private-demo" required />
+              <input
+                type="text"
+                id="private-demo"
+                name="private-demo"
+                required
+              />
               <label for="private-demo">Private Demo Link</label>
             </div>
             <div class="form-group">
-              <input type="text" id="spotify-link" name="spotify-link" required />
+              <input
+                type="text"
+                id="spotify-link"
+                name="spotify-link"
+                required
+              />
               <label for="spotify-link">Spotify Profile Link</label>
             </div>
             <div class="form-group">
-              <input type="text" id="instagram-link" name="instagram-link" required />
+              <input
+                type="text"
+                id="instagram-link"
+                name="instagram-link"
+                required
+              />
               <label for="instagram-link">Instagram Link</label>
+            </div>
+            <div class="form-group">
+              <input type="text" id="message" name="message" />
+              <label for="instagram-link">Message (optional)</label>
             </div>
             <button type="submit">Submit</button>
           </form>
@@ -77,5 +95,4 @@
 
     <script type="module" src="./main.js"></script>
   </body>
-
 </html>

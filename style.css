@@ -25,12 +25,11 @@ body {
   padding: 0;
   overflow: hidden;
   background-color: black;
-
 }
 
 .container {
   max-height: 100vh;
-  overflow-y: scroll;
+  overflow-y: hidden;
   overflow-x: hidden;
   scroll-snap-type: y mandatory;
 }
@@ -98,7 +97,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 
 .logoImage {
