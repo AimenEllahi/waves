@@ -44,13 +44,11 @@ body {
   scroll-behavior: smooth;
 }
 
-
 .panel {
   scroll-snap-align: start;
   height: 100vh;
   position: relative;
 }
-
 
 .panel p {
   font-size: 32px;
@@ -59,7 +57,6 @@ body {
 .scene-1 {
   padding: 1.5rem;
   position: relative;
-
 }
 
 #animation {
@@ -81,7 +78,6 @@ body {
   justify-content: start;
   align-items: start;
 }
-
 
 .overlay p {
   color: white;
@@ -117,7 +113,6 @@ body {
   font-family: "Magtis", sans-serif;
   text-decoration: none !important;
   transition: 300ms ease-in-out;
-
 }
 
 .logoRight:hover {
@@ -129,9 +124,9 @@ body {
   bottom: 140px;
 }
 
-.navlinks>span {
+.navlinks > span {
   color: white;
-  font-size: .85rem;
+  font-size: 0.85rem;
   margin-left: auto;
   cursor: pointer;
   text-decoration: none !important;
@@ -140,7 +135,7 @@ body {
   cursor: pointer;
 }
 
-.navlinks>span:hover {
+.navlinks > span:hover {
   color: gray;
 }
 
@@ -148,22 +143,22 @@ body {
   display: flex;
 }
 
-.navlink-icons>a {
+.navlink-icons > a {
   width: 1.5rem;
   object-fit: contain;
-  margin: .5rem 0;
+  margin: 0.5rem 0;
   cursor: pointer;
   color: #fff;
   transition: 300ms ease-in-out;
 }
 
-.navlink-icons>a:hover {
+.navlink-icons > a:hover {
   transform: scale(1.1);
-  color: #8ec1ff
+  color: #8ec1ff;
 }
 
 .spotify {
-  margin-left: .5rem;
+  margin-left: 0.5rem;
 }
 
 #formSection {
@@ -183,7 +178,7 @@ body {
 h2 {
   margin-top: 5%;
   font-size: 34px;
-  line-height: 1.5rem
+  line-height: 1.5rem;
 }
 
 .form-container p {
@@ -213,7 +208,7 @@ form {
 
 label {
   font-size: 12px;
-  padding: 0.4rem .2rem;
+  padding: 0.4rem 0.2rem;
 }
 
 input[type="text"],
@@ -248,24 +243,83 @@ button:hover {
   border-color: white;
 }
 
-
-.footer>span {
+.footer > span {
   color: white;
-  font-size: .85rem;
+  font-size: 0.85rem;
   font-family: "Roboto-Regular", sans-serif;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
-.footer>a>img {
+.footer > a > img {
   width: 1rem;
   object-fit: contain;
   cursor: pointer;
+}
 
+@media screen and (min-width: 1200px) {
+  .form-container {
+    height: 90vh;
+  }
+  h2 {
+    margin-bottom: 0;
+    font-size: 24px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    padding: 8px;
+  }
+
+  button {
+    margin: 0;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  .scene-1 {
+    padding: 1rem;
+  }
+  .overlay {
+    top: 20px; /* Move the overlay to the top of the section */
+    left: 20px;
+    height: 100%; /* Make the overlay full height */
+    align-items: center; /* Center the overlay content vertically */
+    justify-content: center; /* Center the overlay content horizontally */
+  }
+
+  .overlay p {
+    font-size: 1.4rem;
+    width: 80%;
+  }
+
+  .logoRight {
+    /* margin: 0 0.6rem; */
+    font-size: 1rem;
+    width: 37%;
+  }
+
+  .logoImage {
+    width: 8rem;
+  }
+
+  .navlinks {
+    bottom: 65px;
+  }
+
+  h2 {
+    margin-bottom: 0;
+    font-size: 24px;
+  }
   .form-container p {
     width: 80%;
+    font-size: 14px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    padding: 8px;
   }
 
   form {
@@ -274,5 +328,6 @@ button:hover {
 
   button {
     width: 80%;
+    margin-top: 0;
   }
 }
