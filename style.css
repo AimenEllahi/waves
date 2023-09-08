@@ -44,7 +44,6 @@ body {
   scroll-behavior: smooth;
 
   /* decrease snap speed */
-
 }
 
 .panel {
@@ -114,7 +113,6 @@ body {
   font-size: 1.5rem;
   margin-left: auto;
   align-self: flex-start;
-  margin-top: -2px;
   cursor: pointer;
   font-family: "Magtis", sans-serif;
   text-decoration: none !important;
@@ -130,7 +128,7 @@ body {
   bottom: 140px;
 }
 
-.navlinks>span {
+.navlinks > span {
   color: white;
   font-size: 0.85rem;
   margin-left: auto;
@@ -141,7 +139,7 @@ body {
   cursor: pointer;
 }
 
-.navlinks>span:hover {
+.navlinks > span:hover {
   color: gray;
 }
 
@@ -149,7 +147,7 @@ body {
   display: flex;
 }
 
-.navlink-icons>a {
+.navlink-icons > a {
   width: 1.5rem;
   object-fit: contain;
   margin: 0.5rem 0;
@@ -158,7 +156,7 @@ body {
   transition: 300ms ease-in-out;
 }
 
-.navlink-icons>a:hover {
+.navlink-icons > a:hover {
   transform: scale(1.1);
   color: #8ec1ff;
 }
@@ -185,7 +183,6 @@ h2 {
   margin-top: 7%;
   font-size: 3rem;
   line-height: 1rem;
-
 }
 
 .form-container p {
@@ -254,14 +251,14 @@ button:hover {
   border-color: white;
 }
 
-.footer>span {
+.footer > span {
   color: white;
   font-size: 0.85rem;
   font-family: "Roboto-Regular", sans-serif;
   margin-bottom: 0.5rem;
 }
 
-.footer>a>img {
+.footer > a > img {
   width: 1rem;
   object-fit: contain;
   cursor: pointer;
@@ -331,16 +328,17 @@ button:hover {
   }
 
   h2 {
-    margin-bottom: 0;
+    margin-bottom: 40px;
     font-size: 24px;
   }
 
   .form-container {
-    border: 2px solid rgb(235, 223, 223);
+    /* border: 2px solid rgb(235, 223, 223); */
     height: 100%;
   }
 
   .form-container p {
+    margin-bottom: 40px;
     width: 80%;
     font-size: 14px;
   }
