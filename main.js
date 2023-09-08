@@ -30,7 +30,7 @@ gsap.to(".red", {
   },
 
   backgroundColor: "#FFA500",
-  ease: "none",
+  ease: "power.inOut",
 });
 
 // Function to send the email

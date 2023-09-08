@@ -96,7 +96,6 @@ function checkBounds(x, y) {
 function resize() {
   const width = window.innerWidth;
   const height = window.innerHeight;
-  const isMobile = width < 600;
   canvas.width = width;
   canvas.height = height;
   buffer.canvas.width = width;

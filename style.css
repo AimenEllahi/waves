@@ -84,7 +84,7 @@ body {
   font-size: 2.5rem;
   text-align: left;
   z-index: 2;
-  margin-top: 25%;
+  margin-top: 30%;
   font-family: "Roboto-Bold", sans-serif;
 }
 
@@ -102,6 +102,7 @@ body {
 
 .logoImage {
   width: 10rem;
+  margin-left: 2px;
   object-fit: contain;
 }
 
@@ -124,7 +125,7 @@ body {
   bottom: 140px;
 }
 
-.navlinks > span {
+.navlinks>span {
   color: white;
   font-size: 0.85rem;
   margin-left: auto;
@@ -135,7 +136,7 @@ body {
   cursor: pointer;
 }
 
-.navlinks > span:hover {
+.navlinks>span:hover {
   color: gray;
 }
 
@@ -143,7 +144,7 @@ body {
   display: flex;
 }
 
-.navlink-icons > a {
+.navlink-icons>a {
   width: 1.5rem;
   object-fit: contain;
   margin: 0.5rem 0;
@@ -152,7 +153,7 @@ body {
   transition: 300ms ease-in-out;
 }
 
-.navlink-icons > a:hover {
+.navlink-icons>a:hover {
   transform: scale(1.1);
   color: #8ec1ff;
 }
@@ -176,9 +177,9 @@ body {
 }
 
 h2 {
-  margin-top: 5%;
-  font-size: 34px;
-  line-height: 1.5rem;
+  margin-top: 3%;
+  font-size: 3rem;
+
 }
 
 .form-container p {
@@ -227,13 +228,17 @@ textarea {
 button {
   width: 30%;
   margin: 20px auto;
-  padding: 10px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: white;
   color: black;
   border: 1px solid black;
   border-radius: 5px;
   cursor: pointer;
   transition: 500ms all ease-in;
+  padding-top: 5px;
   font-family: "Magtis", sans-serif;
 }
 
@@ -243,23 +248,24 @@ button:hover {
   border-color: white;
 }
 
-.footer > span {
+.footer>span {
   color: white;
   font-size: 0.85rem;
   font-family: "Roboto-Regular", sans-serif;
   margin-bottom: 0.5rem;
 }
 
-.footer > a > img {
+.footer>a>img {
   width: 1rem;
   object-fit: contain;
   cursor: pointer;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1400px) {
   .form-container {
     height: 90vh;
   }
+
   h2 {
     margin-bottom: 0;
     font-size: 24px;
@@ -278,19 +284,28 @@ button:hover {
 
 @media screen and (max-width: 768px) {
   .scene-1 {
-    padding: 1rem;
+    padding: 0rem;
   }
+
   .overlay {
-    top: 20px; /* Move the overlay to the top of the section */
-    left: 20px;
-    height: 100%; /* Make the overlay full height */
-    align-items: center; /* Center the overlay content vertically */
-    justify-content: center; /* Center the overlay content horizontally */
+    top: 20px;
+    /* Move the overlay to the top of the section */
+    left: 0px;
+    padding-left: 20px;
+    width: 100vw;
+    height: 100%;
+    /* Make the overlay full height */
+    justify-content: center;
+    /* Center the overlay content vertically */
+
+    /* Center the overlay content horizontally */
   }
 
   .overlay p {
     font-size: 1.4rem;
     width: 80%;
+
+    margin-top: 60% !important;
   }
 
   .logoRight {
@@ -301,6 +316,7 @@ button:hover {
 
   .logoImage {
     width: 8rem;
+    margin-left: 20px;
   }
 
   .navlinks {
@@ -311,6 +327,7 @@ button:hover {
     margin-bottom: 0;
     font-size: 24px;
   }
+
   .form-container p {
     width: 80%;
     font-size: 14px;
