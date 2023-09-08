@@ -42,6 +42,9 @@ body {
   overflow-x: hidden;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
+
+  /* decrease snap speed */
+
 }
 
 .panel {
@@ -110,6 +113,7 @@ body {
   color: white;
   font-size: 1.5rem;
   margin-left: auto;
+  align-self: flex-start;
   cursor: pointer;
   font-family: "Magtis", sans-serif;
   text-decoration: none !important;
@@ -177,8 +181,9 @@ body {
 }
 
 h2 {
-  margin-top: 3%;
+  margin-top: 7%;
   font-size: 3rem;
+  line-height: 1rem;
 
 }
 
