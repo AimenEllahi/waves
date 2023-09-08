@@ -125,7 +125,7 @@ body {
   bottom: 140px;
 }
 
-.navlinks>span {
+.navlinks > span {
   color: white;
   font-size: 0.85rem;
   margin-left: auto;
@@ -136,7 +136,7 @@ body {
   cursor: pointer;
 }
 
-.navlinks>span:hover {
+.navlinks > span:hover {
   color: gray;
 }
 
@@ -144,7 +144,7 @@ body {
   display: flex;
 }
 
-.navlink-icons>a {
+.navlink-icons > a {
   width: 1.5rem;
   object-fit: contain;
   margin: 0.5rem 0;
@@ -153,7 +153,7 @@ body {
   transition: 300ms ease-in-out;
 }
 
-.navlink-icons>a:hover {
+.navlink-icons > a:hover {
   transform: scale(1.1);
   color: #8ec1ff;
 }
@@ -179,7 +179,6 @@ body {
 h2 {
   margin-top: 3%;
   font-size: 3rem;
-
 }
 
 .form-container p {
@@ -248,14 +247,14 @@ button:hover {
   border-color: white;
 }
 
-.footer>span {
+.footer > span {
   color: white;
   font-size: 0.85rem;
   font-family: "Roboto-Regular", sans-serif;
   margin-bottom: 0.5rem;
 }
 
-.footer>a>img {
+.footer > a > img {
   width: 1rem;
   object-fit: contain;
   cursor: pointer;
@@ -263,6 +262,7 @@ button:hover {
 
 @media screen and (max-width: 1400px) {
   .form-container {
+    padding-top: 1rem;
     height: 90vh;
   }
 
@@ -328,6 +328,10 @@ button:hover {
     font-size: 24px;
   }
 
+  .form-container {
+    border: 2px solid rgb(235, 223, 223);
+    height: 100%;
+  }
   .form-container p {
     width: 80%;
     font-size: 14px;
@@ -345,6 +349,6 @@ button:hover {
 
   button {
     width: 80%;
-    margin-top: 0;
+    margin-top: 10px;
   }
 }
